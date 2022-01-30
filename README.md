@@ -9,7 +9,7 @@ Dieses Projekt behandelt die Entwicklung einer Temperaturmessung zur Verwendung 
 
 Eine Profilaufnahme eines solchen PWT ist im Folgenden dargestellt.
 
-![Profilaufnahme eines solchen PWT](/doc/pwt.jpg)
+![Profilaufnahme eines solchen PWT](/doc/img/pwt.jpg)
 
 # Anforderungen
 Um Verschmutzung mit ausreichender Genauigkeit erreichen zu können, sind Temperaturmessungen mit einem Abstand von ca. 10 mm erforderlich. Diese Temperaturmessungen müssen wie in der Abbildung in Y-Richtung gleichmäßig verteilt werden. Der zu messende Bereich entspricht in etwa einer Länge von 300 mm bis 800 mm. Eine Aufteilung in mehrere Messeinheiten bzw. Messkarten.
@@ -26,7 +26,7 @@ Die Berührungslose Messung basiert auf der Verwendung von Infrarot-Array-Sensor
 
 Ein Produktbeispiel eines solchen Sensors ist der [AMG8834 von Panasonic](https://industrial.panasonic.com/cdbs/www-data/pdf/ADI8000/ADI8000C66.pdf). Dieser Sensor besitzt eine Auflösung von 8x8 Pixel und kann mittels I²C durch einen Mikrocontroller ausgelesen werden. Eine konzeptionelle Darstellung der Verwendung eines solchen Sensors ist in folgender Abbildung dargestellt.
 
-![Verwendung eines Infrarot-Array-Sensors](/doc/infrarot.png)
+![Verwendung eines Infrarot-Array-Sensors](/doc/img/infrarot.png)
 
 Da der Sensor einen Bildwinkel von 60° besitzt, ist bei einer betrachteten Fläche mit 300 mm Seitenlänge eine Mindesthöhe von 260 mm erforderlich, um die gesamte Fläche mit einem Sensor abzudecken. Dabei kann eine Auflösung von max. 37.5 mm auf dem PWT erreicht werden. Diese Auflösung ist weit unter den geforderten 10 mm. Somit sind mehrere Sensoren erforderlich.
 
@@ -63,15 +63,23 @@ Die Anforderungen an die Elektronik unterscheiden sich von den Anforderungen an 
 
 Aus diesen Anforderungen geht die unten abgebildete Grundarchitektur des gesammten Messystems hervor.
 
-![Architektur des Messsystems](/doc/arch_system.png)
+![Architektur des Messsystems](/doc/img/arch_system.png)
 
+Die Temperatursensoren befinden sich jeweils auf einer Messplatine, um den Abstand dieser der Situation anzupassen. Da die AMG8834 lediglich zwei verschiedene Adressen besitzen können, ist auf jeder ein Mikrocontroller erforderlich. Dieser Mikrocontroller ist für die Kommunikation des Master mit den einzelnen AMG8834 zuständig.
+
+Datenspeicherung sowie Versorgung des Systems wird durch das Master-Gerät durchgeführt. Als Speichermedium wird eine SD-Karte verwendet. Als günstigen Bereich der Spannungsversorgung wird 5 V bis 30 V verwendet.
+
+Die Verbindung aller Geräte, zur Kommunikation sowie Versorgung, wird durch Flachbandkabel realisiert. Diese Flachbandkabel werden mittels [2.54 mm Pfostensteckverbinder](https://www.samtec.com/products/htss-102-01-g-d) mit der Platine verbunden. Um eine zuverlässige Verbindung mit langen Kabeln zum Master-Gerät zu ermöglichen, wird eine [Schraubklemme mit 2.54 mm Pinabstand](https://www.we-online.com/catalog/en/TBL_2_54_2109_HORIZONTAL_ENTRY_69121091000X) verwendet, um eine duale Bestückung zu ermöglichen.
+
+Programmierung, Kalibrierung und Justierung der Messgeräte wird durch eine USB-Schittstelle durchgeführt.
+
+## Architektur der Messplatinen
+Da sich mehrere dieser Geräte an einem I²C-Bus befinden, ist eine Adresswahl erforderlich. Die Adresse der Individuellen Messplatinen kann durch einen DIP-Schalter in den Bereich von 0 und 15 gewählt werden.
+
+![Architektur der Messplatine](/doc/img/arch_messplatine.png)
 
 ## Architektur des Master-Gerätes
 Es wurde sich dazu entschieden zwei LED-Indikatoren auf dem Master-Gerät zu verbauen. Ein Indikator zeit die funktionierende Spannungsversorgung von 3.3 V an. Dieser ist grün und leuchtet durchgegend. Zwei weitere Indikatoren dienen der Anzeige des Betriebszustands und sind grün und rot. Es sind folgende Anzeigemodi dieser Status-Indikatoren möglich:
 
-
 ## Kommunikationsschnittstelle
 [NXP Application Node inkl. Auslegung von langen I²C Bussen](https://www.nxp.com/docs/en/user-guide/UM10204.pdf)
-
-
-![Architektur der Messplatine](/doc/arch_messplatine.png)
