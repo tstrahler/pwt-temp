@@ -74,6 +74,7 @@ Die Verbindung aller Geräte, zur Kommunikation sowie Versorgung, wird durch Fla
 Programmierung, Kalibrierung und Justierung der Messgeräte wird durch eine USB-Schittstelle durchgeführt.
 
 ## Architektur der Messplatinen
+Kern der Messplatinen bildet ein Mikrocontroller. Auf Grund der aktuell beschränkten Verfügbarkeit von Halbleiterbauteilen, wird sich für den [Raspberry Pi RP2040](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf) entschieden.
 Da sich mehrere dieser Geräte an einem I²C-Bus befinden, ist eine Adresswahl erforderlich. Die Adresse der Individuellen Messplatinen kann durch einen DIP-Schalter in den Bereich von 0 und 15 gewählt werden.
 
 ![Architektur der Messplatine](/doc/img/arch_messplatine.png)
