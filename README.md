@@ -69,7 +69,7 @@ Die Temperatursensoren befinden sich jeweils auf einer Messplatine, um den Absta
 
 Datenspeicherung sowie Versorgung des Systems wird durch das Master-Gerät durchgeführt. Als Speichermedium wird eine SD-Karte verwendet. Als günstigen Bereich der Spannungsversorgung wird 5 V bis 30 V verwendet.
 
-Die Verbindung aller Geräte, zur Kommunikation sowie Versorgung, wird durch Flachbandkabel realisiert. Diese Flachbandkabel werden mittels [2.54 mm Pfostensteckverbinder](https://www.samtec.com/products/htss-102-01-g-d) mit der Platine verbunden. Um eine zuverlässige Verbindung mit langen Kabeln zum Master-Gerät zu ermöglichen, wird eine [Schraubklemme mit 2.54 mm Pinabstand](https://www.we-online.com/catalog/en/TBL_2_54_2109_HORIZONTAL_ENTRY_69121091000X) verwendet, um eine duale Bestückung zu ermöglichen.
+Die Verbindung aller Geräte, zur Kommunikation sowie Versorgung, wird durch Flachbandkabel realisiert. Diese Flachbandkabel werden mittels [2.54 mm Pfostensteckverbinder](https://www.samtec.com/products/tst-103-01-g-d) mit der Platine verbunden. Um Crosstalk zwischen den I²C Leitungen zu minimieren, werden jeweils zwei Masse bzw. Versorgungssignale übertragen. So sind Steckverbinder mit 6 Kontakten erforderlich.
 
 Programmierung, Kalibrierung und Justierung der Messgeräte wird durch eine USB-Schittstelle durchgeführt.
 
