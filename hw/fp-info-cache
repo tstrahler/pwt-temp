@@ -1,4 +1,4 @@
-20094955026889287
+20096598823670516
 00_pwt-temp_lib
 IC_AMG8834
 
@@ -20,6 +20,13 @@ IC_W25Q16JV
 0
 8
 8
+00_pwt-temp_lib
+OSC_ABM10
+
+
+0
+0
+0
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
