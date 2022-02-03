@@ -1,4 +1,25 @@
-20096598823670516
+20103175414926411
+00_pwt-temp_lib
+CON_PH_2.54MM_2x3_HORIZ
+Through hole angled pin header, 2x03, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x03 2.54mm double row
+0
+6
+6
+00_pwt-temp_lib
+CON_PH_2.54MM_2x3_VERT
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+00_pwt-temp_lib
+CON_ST_3.5MM_2POS
+1843790
+
+0
+4
+2
 00_pwt-temp_lib
 IC_AMG8834
 
@@ -25,8 +46,15 @@ OSC_ABM10
 
 
 0
+4
+4
+00_pwt-temp_lib
+PMIC_TSR_1_2433
+DCDC-Converter, TRACO, TSR 1-xxxx
+DCDC-Converter TRACO TSR-1
 0
-0
+3
+3
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
