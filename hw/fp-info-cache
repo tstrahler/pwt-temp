@@ -1,24 +1,31 @@
-20103175414926411
+20108107407914370
 00_pwt-temp_lib
 CON_PH_2.54MM_2x3_HORIZ
-Through hole angled pin header, 2x03, 2.54mm pitch, 6mm pin length, double rows
-Through hole angled pin header THT 2x03 2.54mm double row
+
+
 0
 6
 6
 00_pwt-temp_lib
 CON_PH_2.54MM_2x3_VERT
-Through hole straight pin header, 2x03, 2.54mm pitch, double rows
-Through hole pin header THT 2x03 2.54mm double row
+
+
 0
 6
 6
 00_pwt-temp_lib
 CON_ST_3.5MM_2POS
-1843790
+
 
 0
 4
+2
+00_pwt-temp_lib
+C_0603
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
 2
 00_pwt-temp_lib
 IC_AMG8834
@@ -29,7 +36,7 @@ IC_AMG8834
 14
 00_pwt-temp_lib
 IC_RP2040
-QFN56-EP, 7x7, 0.4mm, Raspberry Pi RP2040
+
 
 0
 61
@@ -42,6 +49,13 @@ IC_W25Q16JV
 8
 8
 00_pwt-temp_lib
+MECH_BTN_SMD_SMALL
+
+
+0
+4
+4
+00_pwt-temp_lib
 OSC_ABM10
 
 
@@ -50,11 +64,18 @@ OSC_ABM10
 4
 00_pwt-temp_lib
 PMIC_TSR_1_2433
-DCDC-Converter, TRACO, TSR 1-xxxx
-DCDC-Converter TRACO TSR-1
+
+
 0
 3
 3
+00_pwt-temp_lib
+R_0603
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
