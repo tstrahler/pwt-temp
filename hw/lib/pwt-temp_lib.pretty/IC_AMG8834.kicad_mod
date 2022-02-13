@@ -1,17 +1,17 @@
-(footprint "IC_AMG8834" (version 20211232) (generator pcbnew)
+(footprint "IC_AMG8834" (version 20220131) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61FC5A6F)
+  (tedit 6206BBB1)
   (attr smd)
   (fp_text reference "REF**" (at 0 -5.5 unlocked) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)))
     (tstamp c58960d9-4cac-4036-ad2e-1aef26946dae)
   )
-  (fp_text value "IC_AMG8834" (at 0 -7 unlocked) (layer "F.Fab")
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text value "IC_AMG8834" (at 0 -7 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 5b96c1ad-46ba-4366-8241-fbc1cd0e9bbd)
   )
-  (fp_text user "${REFERENCE}" (at 0 -8.5 unlocked) (layer "F.Fab")
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text user "${REFERENCE}" (at 0 -8.5 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
     (tstamp fced3dbe-eec8-4979-aefd-686432f00d6c)
   )
   (fp_circle (center -6.1 5) (end -5.9 5)
@@ -90,7 +90,7 @@
     (solder_mask_margin 0.1) (solder_paste_margin -0.1) (clearance 0.2) (thermal_bridge_angle 45) (tstamp 2f3eea0d-cce9-4a8e-9912-22ef884905ec))
   (pad "14" smd roundrect (at -5.5 -3.05) (size 0.8 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.05)
     (solder_mask_margin 0.1) (solder_paste_margin -0.1) (clearance 0.2) (thermal_bridge_angle 45) (tstamp 2052c7d9-db22-47d5-a59b-8fed1f71e361))
-  (model "${KIPRJMOD}/pwt-temp_lib_embedded/IC_AMG8834.step"
+  (model "${KIPRJMOD}/../lib/pwt-temp_lib_embedded/IC_AMG8834.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -1,17 +1,17 @@
-(footprint "CON_PH_2.54MM_2x3_HORIZ" (version 20211232) (generator pcbnew)
+(footprint "CON_PH_2.54MM_2x3_HORIZ" (version 20220131) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61FC6133)
+  (tedit 6206BB9E)
   (attr through_hole)
   (fp_text reference "REF**" (at 5 -6) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 0e40c698-5af5-40a4-b342-9809efdeffa3)
   )
-  (fp_text value "PinHeader_2x03_P2.54mm_Horizontal" (at 5 -7.5) (layer "F.Fab")
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text value "PinHeader_2x03_P2.54mm_Horizontal" (at 5 -7.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 6e54b1fe-14f8-4887-964f-9d52d28a7894)
   )
-  (fp_text user "${REFERENCE}" (at 5 -9) (layer "F.Fab")
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text user "${REFERENCE}" (at 5 -9) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 6b745ef3-6d71-4066-b453-e86475524c73)
   )
   (fp_line (start -0.16 -0.35) (end -0.16 0.35)
@@ -94,7 +94,7 @@
   (pad "4" thru_hole oval (at 2.54 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp dc9caa1f-f949-4081-91f6-4caeded64d2e))
   (pad "5" thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp e84da1f7-e6a2-441e-8b1a-27da0f96cde1))
   (pad "6" thru_hole oval (at 2.54 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp bf263550-2393-4e65-b099-017847272ab1))
-  (model "${KIPRJMOD}/pwt-temp_lib_embedded/CON_PH_2.54MM_2x3_HORIZ.stp"
+  (model "${KIPRJMOD}/../lib/pwt-temp_lib_embedded/CON_PH_2.54MM_2x3_HORIZ.stp"
     (offset (xyz 3.445 -2.54 4.8))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))

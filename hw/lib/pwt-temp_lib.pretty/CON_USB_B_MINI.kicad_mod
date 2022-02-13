@@ -1,16 +1,16 @@
 (footprint "CON_USB_B_MINI" (version 20220131) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 62062949)
+  (tedit 6206BBA9)
   (attr smd)
   (fp_text reference "REF**" (at 0.65 -13.16 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 9a2d648d-863a-4b7b-80f9-d537185c212b)
   )
-  (fp_text value "CON_USB_B_MINI" (at 0.65 -11.66 unlocked) (layer "F.Fab")
+  (fp_text value "CON_USB_B_MINI" (at 0.65 -11.66 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp c4cab9c5-d6e5-4660-b910-603a51b56783)
   )
-  (fp_text user "${REFERENCE}" (at 0.65 -10.16 unlocked) (layer "F.Fab")
+  (fp_text user "${REFERENCE}" (at 0.65 -10.16 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 6ffdf05e-e119-49f9-85e9-13e4901df42a)
   )
@@ -128,7 +128,7 @@
     (solder_mask_margin 0.1) (solder_paste_margin -0.2) (clearance 0.1) (thermal_bridge_angle 45) (tstamp 224e8890-cdee-45fd-bd2e-64fe49c2de75))
   (pad "6" smd roundrect (at 8.4 4.45) (size 2.5 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.05)
     (solder_mask_margin 0.1) (solder_paste_margin -0.2) (clearance 0.1) (thermal_bridge_angle 45) (tstamp 8a1a639a-559c-483d-9c99-1b2fafbdacf1))
-  (model "${KIPRJMOD}/pwt-temp_lib_embedded/CON_USB_B_MINI.step"
+  (model "${KIPRJMOD}/../lib/pwt-temp_lib_embedded/CON_USB_B_MINI.step"
     (offset (xyz 0 0 2))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 90))

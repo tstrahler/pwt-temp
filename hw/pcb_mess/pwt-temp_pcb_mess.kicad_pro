@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -127,6 +133,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
           "td_onpadsmd": true,
           "td_onroundshapesonly": false,
           "td_ontrackend": false,
@@ -140,7 +147,8 @@
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
-          "td_target_name": "td_round_shape"
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
         },
         {
           "td_curve_segcount": 0,
@@ -148,7 +156,8 @@
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
-          "td_target_name": "td_rect_shape"
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
         },
         {
           "td_curve_segcount": 0,
@@ -156,11 +165,26 @@
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
-          "td_target_name": "td_track_end"
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        0.15,
+        0.2,
+        0.25
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -381,7 +405,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pwt-temp.kicad_pro",
+    "filename": "pwt-temp_pcb_mess.kicad_pro",
     "version": 1
   },
   "net_settings": {
