@@ -1,4 +1,4 @@
-20127398537626799
+20129043679164189
 00_pwt-temp_lib
 CON_PH_2.54MM_2x3_HORIZ
 
@@ -62,6 +62,13 @@ MECH_BTN_SMD_SMALL
 0
 4
 4
+00_pwt-temp_lib
+MECH_SW_DIP4_SMD
+
+
+0
+8
+8
 00_pwt-temp_lib
 OSC_ABM10
 
