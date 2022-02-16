@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name "00_pwt-temp_lib")(type "KiCad")(uri "${KIPRJMOD}/../lib/pwt-temp_lib.kicad_sym")(options "")(descr ""))
-)

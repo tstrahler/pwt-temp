@@ -10,6 +10,9 @@
 _autosave-*
 *.tmp
 *-backups
+fp-info-cache
+fp-lib-table
+sym-lib-table
 
 # Netlist files (exported from Eeschema)
 *.net
