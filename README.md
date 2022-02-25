@@ -81,7 +81,7 @@ Da sich mehrere dieser Geräte an einem I²C-Bus befinden, ist eine Adresswahl e
 
 Ein Rendering der Messplatine ist im Folgenen zu sehen.
 
-![Rendering der Messplatine](/doc/img/pcb.png)
+![Rendering der Messplatine](/doc/img/pcb.jpg)
 
 
 ## Architektur des Master-Gerätes
