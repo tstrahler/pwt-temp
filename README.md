@@ -79,6 +79,11 @@ Da sich mehrere dieser Geräte an einem I²C-Bus befinden, ist eine Adresswahl e
 
 ![Architektur der Messplatine](/doc/img/arch_messplatine.png)
 
+Ein Rendering der Messplatine ist im Folgenen zu sehen.
+
+![Rendering der Messplatine](/doc/img/pcb.png)
+
+
 ## Architektur des Master-Gerätes
 Es wurde sich dazu entschieden zwei LED-Indikatoren auf dem Master-Gerät zu verbauen. Ein Indikator zeit die funktionierende Spannungsversorgung von 3.3 V an. Dieser ist grün und leuchtet durchgegend. Zwei weitere Indikatoren dienen der Anzeige des Betriebszustands und sind grün und rot. Es sind folgende Anzeigemodi dieser Status-Indikatoren möglich:
 
